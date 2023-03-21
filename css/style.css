@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Roboto:wght@400;500;700;900&display=swap');
+/*
+    font-family: 'Lora', serif;
+    font-family: 'Roboto', sans-serif;
+ */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lora', serif;
+}
+
+.nav-wrapped {
+    display: flex;
+    height: 5rem;
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.nav-wrapped > ul {
+    display: flex;
+    list-style: none;
+    height: 100%;
+}
+
+.nav-wrapped > ul > li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.nav-wrapped > ul > li > a {
+    text-decoration: none;
+    color: white;
+    padding: 0 1rem 0 1rem;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.nav-wrapped > ul > li > img {
+    height: 100%;
+}
+
+.mobile-nav {
+    display: none;
+}
+
+.mobile-nav.show {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    width: 100%;
+}
+
+.mobile-nav > ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    width: 100%;
+}
+
+.mobile-nav > ul > li {
+    width: 100%;
+}
+
+.mobile-nav > ul > li > a {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: 500;
+    padding: 1rem 0 1rem 0;
+}
+
+.mobile-nav > ul > li:not(:first-child){
+    border-top: 1px solid #666;
+}
+
+.hamburger-btn {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.hamburger-btn > a {
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    padding: 0 1rem 0 1rem;
+    cursor: pointer;
+    user-select: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 600px)  {
+    .hamburger-btn{
+        display: flex;
+    }
+
+    .nav-wrapped > ul:nth-child(2) {
+        display: none;
+    }
+
+    .nav-wrapped > ul:nth-child(2).show {
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+    }
+
+}
