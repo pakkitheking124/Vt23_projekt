@@ -11,7 +11,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #3b4465;
+    background-image: url("../images/coffeaccount.jpg");
+    background-size: cover;
+    background-position-y: center;
 }
 
 .section-title {
