@@ -109,6 +109,35 @@
     justify-content: center;
 }
 
+
+.footer-wrapped{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: black;
+
+}
+
+.foot-about{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.foot-contact{
+    display: flex;
+    flex-direction: column;
+}
+
+.foot-about > a, .foot-contact > a{
+    margin: 10px;
+}
+
+.foot-about, .foot-contact{
+    color: white;
+}
+
+
 @media screen and (max-width: 600px)  {
     .hamburger-btn{
         display: flex;
@@ -122,6 +151,12 @@
         display: flex;
         flex-direction: column;
         background-color: black;
+    }
+
+    .footer-wrapped{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
 }
