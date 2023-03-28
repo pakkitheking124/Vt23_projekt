@@ -8,7 +8,7 @@
 
     <ul>
         <li><a href="/index.php">Home</a></li>
-        <li><a href="#">Store</a></li>
+        <li><a href="/store.php">Store</a></li>
         <li><a href="#">About</a></li>
         <li><a href="/account.php">Account</a></li>
     </ul>
@@ -19,7 +19,7 @@
 <div class="mobile-nav">
     <ul>
         <li><a href="../index.php">Home</a></li>
-        <li><a href="#">Store</a></li>
+        <li><a href="/store.php">Store</a></li>
         <li><a href="#">About</a></li>
         <li><a href="../account.php">Account</a></li>
     </ul>

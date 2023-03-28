@@ -1,0 +1,3 @@
+<div class="whitetop-wrapped">
+    <div>Registrera och logga in och få 15% rea på maskiner</div>
+</div>
