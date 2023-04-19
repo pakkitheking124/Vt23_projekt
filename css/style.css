@@ -12,6 +12,7 @@
     list-style: none;
     text-decoration: none;
     font-family: 'Montserrat', serif;
+    box-sizing: border-box;
 }
 
 .nav-wrapped {
@@ -237,11 +238,13 @@
 .store-wrapped{
     display: flex;
     flex-direction: column;
+
 }
 
 .categories-store{
     display: flex;
     flex-direction: row;
+    overflow: scroll;
 }
 
 .categories-store > a {
@@ -252,9 +255,80 @@
     padding: 15px;
     color: white;
     background-color: #2ca079;
+}
+
+.erbjudande-store > h1 {
+    display: flex;
+    margin: 10px;
+}
+
+.erbjudande-store > p{
+    display: flex;
+    margin-left: 10px;
+    margin-bottom: 15px;
+    align-items: center;
+}
+
+.reavaror-store{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-iteam: center;
+    justify-content: center;
+    margin-bottom: 30px;
 
 }
 
+.reavaror-store > a{
+    display: flex;
+    flex-direction: column;
+    flex-basis:     25%;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border: 0.1px solid black;
+}
+
+.reavaror-store > a:hover{
+    box-shadow: -1px -3px 0px 16px rgba(0,128,0,0.36) inset;
+    -webkit-box-shadow: -1px -3px 0px 16px rgba(0,128,0,0.36) inset;
+    -moz-box-shadow: -1px -3px 0px 16px rgba(0,128,0,0.36) inset;
+}
+
+.categories-store > .nuauto{
+    background-color: black;
+}
+
+.categories-store > .nustore{
+    background-color: black;
+}
+
+.reavaror-store > a > div {
+
+}
+
+.reavaror-store > a > div > img{
+    width: 300px;
+    margin-top: 13px;
+}
+
+.reavaror-store > a > div > h2{
+    margin-top: 10px;
+}
+
+.reavaror-store > a > div > h3{
+    color: red;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+
+}
+
+.reavaror-store > a > div > p{
+    margin-bottom: 20px;
+    margin-left: 10px;
+
+}
 
 
 

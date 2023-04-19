@@ -5,7 +5,6 @@ include_once ('nav.fot/navbar.php');
 
 
     <section class="forms-section">
-        <h1 class="section-title">Animated Forms</h1>
         <div class="forms">
             <div class="form-wrapper is-active">
                 <button type="button" class="switcher switcher-login">
