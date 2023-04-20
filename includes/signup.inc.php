@@ -1,8 +1,8 @@
 <?php
 
 if (isset($_POST["submit"])) {      // om formuläret skickas genom submit knappen
-    
-    $name = $_POST["name"];         // ["..."] hänvisar till attributet i formuläret
+
+    // ["..."] hänvisar till attributet i formuläret
     $email = $_POST["email"];       // collecting the data from the input with name email
     $username = $_POST["uid"];
     $pwd = $_POST["pwd"];
@@ -13,7 +13,7 @@ if (isset($_POST["submit"])) {      // om formuläret skickas genom submit knapp
 
     //ERRORHANDLING
 
-    if (emptyInputSignup($name, $email, $username, $pwd, $pwdRepeat) !== false) {     //if not (!) equal (==) to false, inte samma som == true!!
+    if (emptyInputSignup($email, $username, $pwd, $pwdRepeat) !== false) {     //if not (!) equal (==) to false, inte samma som == true!!
         //emptyInputSignup är en funktion som finns i funtions.inc.php
         header("location: ../index.php?error=emptyInput");  //skickar användaren tillbaka till index.php med error meddelande
         exit(); //avslutar scriptet
@@ -24,7 +24,7 @@ if (isset($_POST["submit"])) {      // om formuläret skickas genom submit knapp
         exit();
     }
 
-    if (invalidEmail($email) !== false) { 
+    if (invalidEmail($email) !== false) {
         header("location: ../index.php?error=invalidEmail");
         exit();
     }
@@ -34,13 +34,12 @@ if (isset($_POST["submit"])) {      // om formuläret skickas genom submit knapp
         exit();
     }
 
-    if (uidExists($conn, $username, $email) !== false) {    //$conn i dbh.inc.php
-        header("location: ../index.php?error=usernameTaken");
+    if (uidExists($conn, $email) !== false) {    //$conn i dbh.inc.php
+        header("location: ../index.php?error=emailTaken");
         exit();
     }
 
-    createUser($conn, $name, $email, $username, $pwd); //om allt frid och fröjd; skapa användaren
-
+    createUser($conn, $email, $username, $pwd); //om allt frid och fröjd; skapa användaren
 }
 
 else {

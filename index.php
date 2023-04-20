@@ -31,5 +31,6 @@
 
 
 <?php
+    include_once "errors.php";
     include_once ('nav.fot/footer.php');
 ?>

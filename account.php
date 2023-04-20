@@ -11,19 +11,20 @@ include_once ('nav.fot/navbar.php');
                     Login
                     <span class="underline"></span>
                 </button>
-                <form class="form form-login">
+
+                <form class="form form-login" action="includes/login.inc.php" method="post">
                     <fieldset>
                         <legend>Please, enter your email and password for login.</legend>
                         <div class="input-block">
                             <label for="login-email">E-mail</label>
-                            <input id="login-email" type="email" required>
+                            <input id="login-email" name="email" type="email" required>
                         </div>
                         <div class="input-block">
                             <label for="login-password">Password</label>
-                            <input id="login-password" type="password" required>
+                            <input id="login-password" name="pwd" type="password" required>
                         </div>
                     </fieldset>
-                    <button type="submit" class="btn-login">Login</button>
+                    <button type="submit" name="submit" class="btn-login">Login</button>
                 </form>
             </div>
             <div class="form-wrapper">
@@ -31,23 +32,28 @@ include_once ('nav.fot/navbar.php');
                     Sign Up
                     <span class="underline"></span>
                 </button>
-                <form class="form form-signup">
+
+                <form class="form form-signup" action="includes/signup.inc.php" method="post">
                     <fieldset>
                         <legend>Please, enter your email, password and password confirmation for sign up.</legend>
                         <div class="input-block">
-                            <label for="signup-email">E-mail</label>
-                            <input id="signup-email" type="email" required>
+                            <label for="email">E-mail
+                            <input name="email" type="text" required></label>
                         </div>
                         <div class="input-block">
-                            <label for="signup-password">Password</label>
-                            <input id="signup-password" type="password" required>
+                            <label for="uid">Username
+                            <input name="uid" type="text" required></label>
                         </div>
                         <div class="input-block">
-                            <label for="signup-password-confirm">Confirm password</label>
-                            <input id="signup-password-confirm" type="password" required>
+                            <label for="pwd">Password
+                            <input name="pwd" type="password" required></label>
+                        </div>
+                        <div class="input-block">
+                            <label for="pwdrepeat">Confirm password
+                            <input name="pwdrepeat" type="password" required></label>
                         </div>
                     </fieldset>
-                    <button type="submit" class="btn-signup">Continue</button>
+                    <button type="submit" name="submit" class="btn-signup">Continue</button>
                 </form>
             </div>
         </div>

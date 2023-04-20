@@ -1,14 +1,14 @@
-<?php   
+    <?php
     //$ = variable 
     $serverName = "localhost";  //xampp
     $dBUsername = "root";
     $dBPassword = "";           // tom 'on default' 
-    $dBName = "webbs_proj_01";  // databas i php myadmin 
+    $dBName = "coffeeshop";  // databas i php myadmin
 
     //mysqli_connect opens a connection to the MySQL Server.
     $conn = mysqli_connect($serverName, $dBUsername, $dBPassword, $dBName); // function & uppkoppling
 
-    if(!$conn) {    //om uppkoppling (!) INTE funkar
+    if(!$conn) {    //om uppkoppling (!) INTE   funkar
         die("Uppkoppling misslyckades: " . mysqli_connect_error()); //'kill it' och visa meddelande
     }
     //mysqli_connect_error() returns the error message from the last connection attempt, no parameters.

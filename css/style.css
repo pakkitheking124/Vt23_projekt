@@ -257,6 +257,13 @@
     background-color: #2ca079;
 }
 
+.categories-store > a:hover{
+    background-color: black;
+    transition: opacity 1s ease 0s;
+    
+
+}
+
 .erbjudande-store > h1 {
     display: flex;
     margin: 10px;
