@@ -339,6 +339,72 @@
 
 
 
+/* TODO: account page*/
+
+
+.megaaccount-wrapped{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-image: url("../images/accountpagebackground.jpg");
+    background-size: cover;
+    background-position-y: center;
+    justify-content: center;
+
+}
+
+
+
+.account-wrapped{
+    display: flex;
+    flex-direction: column;
+    background-color: #eff0f2;
+    padding-bottom: 300px;
+}
+
+
+.print-users{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.print-users > h1{
+    padding-top: 10px;
+    padding-bottom: 10px ;
+}
+
+.print-users > h2{
+    padding-top: 10px;
+    padding-bottom: 10px ;
+    border-top: 1px solid #666;
+}
+
+
+.logout-css{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    font-size: x-large;
+    font-family: 'Montserrat', serif;
+}
+
+.logout-css > a{
+    padding: 14px;
+    background-color: red;
+    border: 1px black;
+    font-family: 'Montserrat', serif;
+    text-decoration: none;
+    color: white;
+    border-radius: 25px;
+    margin-top: 30px;
+}
+
+
+
 
 
 
@@ -382,6 +448,10 @@
         margin-left: 0;
         margin-top: 15px;
         margin-bottom: 15px;
+    }
+
+    .account-wrapped{
+        width: 100%;
     }
 
 

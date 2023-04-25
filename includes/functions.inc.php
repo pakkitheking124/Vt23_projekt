@@ -45,7 +45,7 @@ function uidExists($conn, $email) { //se även signup.inc.php
     mysqli_stmt_execute($stmt);     //executing the statement
 
     $resultData = mysqli_stmt_get_result($stmt);     //get the result from this particular prepared statement
-
+    var_dump($resultData);
     if ($row = mysqli_fetch_assoc($resultData)) {
         return $row;
     }
@@ -72,7 +72,7 @@ function createUser($conn, $email, $username, $pwd) {
     $hashedPwd = password_hash($pwd, PASSWORD_DEFAULT); //password_hash in php is automatically being updated
 
     //if it does not fail, bind paremeters to it
-    mysqli_stmt_bind_param($stmt, "sss", $email, $username, $hashedPwd);   //ssss: 4 pieces of data
+    mysqli_stmt_bind_param($stmt, "sss", $username, $email, $hashedPwd);   //ssss: 4 pieces of data
     mysqli_stmt_execute($stmt);
     mysqli_stmt_close($stmt); //closing down the prepared statement
     loginUser($conn, $email, $pwd);
@@ -105,7 +105,6 @@ function loginUser($conn, $email, $pwd) {    //se även login.inc.php
         exit();
     }
 
-    //store data inside a session
     elseif ($checkPwd === true) {
         session_start();
         //create session variables (superglobals)
