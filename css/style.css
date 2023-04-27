@@ -338,6 +338,63 @@
 }
 
 
+/* TODO: Automatiska kaffe maskiner */
+
+.autocoffemachines-store > a > div {
+
+}
+
+.autocoffemachines-store > a > div > img{
+    width: 300px;
+    margin-top: 13px;
+}
+
+.autocoffemachines-store > a > div > h2{
+    margin-top: 10px;
+    color: black;
+}
+
+.autocoffemachines-store > a > div > h3{
+    color: #2ca079;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+
+}
+
+.autocoffemachines-store > a > div > p{
+    margin-bottom: 20px;
+    margin-left: 10px;
+
+}
+
+.autocoffemachines-store > a:hover{
+    box-shadow: -1px -3px 0px 16px rgba(0,128,0,0.36) inset;
+    -webkit-box-shadow: -1px -3px 0px 16px rgba(0,128,0,0.36) inset;
+    -moz-box-shadow: -1px -3px 0px 16px rgba(0,128,0,0.36) inset;
+}
+
+.autocoffemachines-store{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-iteam: center;
+    justify-content: center;
+    margin-bottom: 30px;
+
+}
+
+.autocoffemachines-store > a{
+    display: flex;
+    flex-direction: column;
+    flex-basis:     25%;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border: 0.1px solid black;
+}
+
+
 
 /* TODO: account page*/
 

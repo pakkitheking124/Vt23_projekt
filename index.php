@@ -32,3 +32,14 @@
     include_once "errors.php";
     include_once ('nav.fot/footer.php');
 ?>
+
+<!--
+TODO:
+- Visa användaren att den har loggat in genom att till exempel döpa om Account till anv namn efter inloggning
+- Skicka användaren till sina erbjudanden efter registrering.
+- Låta användaren ta del av sina särskilda erbjudanden (* 0.85).
+"Välkomnen anv namn"! Specialerbjudanden för dig som medlem:".
+Skapa någon funktion för att generera medlemmars specialerbjudanden och kommentera koden.
+
+Vad gäller erbjudande i front end: Skapa en mer utförlig beskrivning av en eller två produkter med tex en liten "mer" knapp.
+-->

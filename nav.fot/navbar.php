@@ -20,7 +20,19 @@ session_start();
             } else {
                 echo "/login.php";
             }
-            ?>">Account</a></li>
+            ?>"> Account </a></li>
+        <style>
+            .nav-wrapped > ul > li:nth-child(4) > a {
+                display: none;
+            }
+        </style>
+        <li><a href="<?php
+            if (isset($_SESSION['userid'])){
+                echo "/account.php";
+            } else {
+                echo "/login.php";
+            }
+            ?>"> <?php echo $_SESSION['userUid']; ?> </a></li>
     </ul>
 
     <div class="hamburger-btn"><a>☰</a></div>
@@ -38,5 +50,19 @@ session_start();
                 echo "/login.php";
             }
             ?>">Account</a></li>
+
+        <style>
+            .mobile-nav > ul > li:nth-child(4) > a {
+                display: none;
+            }
+        </style>
+
+        <li><a href="<?php
+            if (isset($_SESSION['userid'])){
+                echo "/account.php";
+            } else {
+                echo "/login.php";
+            }
+            ?>"> <?php echo $_SESSION['userUid']; ?> </a></li>
     </ul>
 </div>

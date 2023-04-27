@@ -10,16 +10,16 @@
         <a class="nustore" href="store.php">Erbjudande</a>
         <a href="Automatiskacaffem.php">Automatic Coffee Machines</a>
         <a href="#">Espresso Maskiner</a>
-        <a href="#">Caffe Makers</a>
+        <a href="#">Coffe Makers</a>
         <a href="#">Mjölk Kylare</a>
         <a href="#">Koppar, Muggar och Termosar</a>
-        <a href="#">Caffe Capslar</a>
-        <a href="#">Caffe Böner</a>
+        <a href="#">Coffe Capslar</a>
+        <a href="#">Coffe Böner</a>
     </div>
 
     <div class="erbjudande-store">
         <h1>Erbjunde</h1>
-        <p>Hitta dem besta fynden inom caffe industin på phatos. <br>   Login rabatten kommer inte adderas på varor som redan har en rea,
+        <p>Hitta dem besta fynden inom coffe industin på phatos. <br>   Login rabatten kommer inte adderas på varor som redan har en rea,
         den som har störst erbjudande kommer gälla. <br> Alla prudukter kan köpas och testas i 30 dagar, om det inte passar dig kan du
         lämna tillbaka.</p>
     </div>
