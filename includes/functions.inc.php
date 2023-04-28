@@ -76,6 +76,7 @@ function createUser($conn, $email, $username, $pwd) {
     mysqli_stmt_execute($stmt);
     mysqli_stmt_close($stmt); //closing down the prepared statement
     loginUser($conn, $email, $pwd);
+
     exit();
 }
 
@@ -112,7 +113,7 @@ function loginUser($conn, $email, $pwd) {    //se även login.inc.php
         $_SESSION["userUid"] = $uidExists["usersName"];
         $_SESSION["userEmail"] = $uidExists["usersEmail"];
         $_SESSION["userItems"] = $uidExists["userItems"];
-        header("location: ../index.php");
+        header("location: ../automatiskacaffem.php"); //if the user doesn't go the proper way, send back to register
         exit();
     }
 }

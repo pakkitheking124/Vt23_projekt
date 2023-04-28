@@ -8,7 +8,7 @@ include_once ('nav.fot/whitebar.php');
 
         <div class="categories-store">
             <a href="store.php">Erbjudande</a>
-            <a class="nuauto" href="Automatiskacaffem.php">Automatic Coffee Machines
+            <a class="nuauto" href="automatiskacaffem.php">Automatic Coffee Machines
             </a>
             <a href="#">Espresso Maskiner</a>
             <a href="#">Coffe Makers</a>
@@ -19,8 +19,42 @@ include_once ('nav.fot/whitebar.php');
         </div>
 
 
+    <?php
+    if(isset($_SESSION['userid'])){
+        echo "<h1>";
+        echo "Hej ", $_SESSION['userUid'];
+        echo "</h1>";
+
+        echo "<p>";
+        echo "Välkommen är inloggad och därför får du 15% rabatt";
+        echo "</p>";
+    }
+    ?>
+
         <div class="autocoffemachines-store">
-            <a href="#"><div>
+
+            <?php
+                $products_json = json_decode(file_get_contents("http://localhost/products/automatiskkaffe.json"), true);
+
+                foreach ($products_json as $product){
+                    echo "<a href='" . $product['link'] . "'><div>";
+                    echo "<img src='" . $product['img'] . "'>";
+                    echo "<h2>" . $product['name'] . "</h2>";
+                    if(isset($_SESSION['userid'])){
+                        $price_reduction = round(0.15*$product['price']);
+                        $price_str = ($product['price'] - $price_reduction) . ":- (-15%)";
+                        echo "<h3>" . $price_str . "</h3>";
+
+                    } else {
+                        echo "<h3>" . $product['price'] . ":-</h3>";
+                    }
+
+                    echo "<p>" . $product['desc'] . "</p>";
+                    echo "</div></a>";
+                }
+            ?>
+
+            <!--<a href="#"><div>
                     <img src="images/smegBCC01.jpg" alt="">
                     <h2>Smeg BCC01</h2>
                     <h3>7000:- (-800kr)</h3>
@@ -102,7 +136,7 @@ include_once ('nav.fot/whitebar.php');
                     <h2>Nivona CafeRomatica</h2>
                     <h3>100:-</h3>
                     <p>• jadiddiidd <br><br> • jadiddiidd <br><br> • jadiddiidd <br><br> • jadiddiidd <br> </p>
-                </div></a>
+                </div></a>-->
 
 
         </div>

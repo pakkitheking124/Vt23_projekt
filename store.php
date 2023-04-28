@@ -8,7 +8,7 @@
 
     <div class="categories-store">
         <a class="nustore" href="store.php">Erbjudande</a>
-        <a href="Automatiskacaffem.php">Automatic Coffee Machines</a>
+        <a href="automatiskacaffem.php">Automatic Coffee Machines</a>
         <a href="#">Espresso Maskiner</a>
         <a href="#">Coffe Makers</a>
         <a href="#">Mjölk Kylare</a>

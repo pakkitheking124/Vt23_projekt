@@ -53,7 +53,7 @@ include_once ('nav.fot/navbar.php');
                             <input name="pwdrepeat" type="password" required></label>
                         </div>
                     </fieldset>
-                    <button type="submit" name="submit" class="btn-signup">Continue</button>
+                    <button href="" type="submit" name="submit" class="btn-signup">Continue</button>
                 </form>
             </div>
         </div>

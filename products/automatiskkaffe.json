@@ -1,0 +1,86 @@
+[
+  {
+    "name": "DeLonghi ECAM610",
+    "img": "images/delonghiecam610.jpg",
+    "desc": "• jadiddiidd <br><br> • jadiddiidd <br><br> • jadiddiidd <br><br> • jadiddiidd <br> ",
+    "price": 100,
+    "link": "#"
+  },
+  {
+    "name": "DeLonghi ECAM650",
+    "img": "images/delonghiecam650.jpg",
+    "desc": "• jadiddiidd <br><br> • jadiddiidd <br><br> • jadiddiidd <br><br> • jadiddiidd <br> ",
+    "price": 10000,
+    "link": "#"
+  },
+  {
+    "name": "DeLonghi ECAM250",
+    "img": "images/delonghiecam250.jpg",
+    "desc": "• jadiddiidd <br><br> • jadiddiidd <br><br> • jadiddiidd <br><br> • jadiddiidd <br> ",
+    "price": 10000,
+    "link": "#"
+  },
+  {
+    "name": "DeLonghi Dinamica",
+    "img": "images/delonghidinamica.jpg",
+    "desc": "• jadiddiidd <br><br> • jadiddiidd <br><br> • jadiddiidd <br><br> • jadiddiidd <br> ",
+    "price": 10000,
+    "link": "#"
+  },
+  {
+    "name": "DeLonghi ECAM350",
+    "img": "images/delonghiecam350-75-sdinamica.jpg",
+    "desc": "• jadiddiidd <br><br> • jadiddiidd <br><br> • jadiddiidd <br><br> • jadiddiidd <br> ",
+    "price": 10000,
+    "link": "#"
+  },
+  {
+    "name": "Siemens EQ500",
+    "img": "images/siemenseq500.jpg",
+    "desc": "• jadiddiidd <br><br> • jadiddiidd <br><br> • jadiddiidd <br><br> • jadiddiidd <br> ",
+    "price": 10000,
+    "link": "#"
+  },
+  {
+    "name": "Siemens EQ6",
+    "img": "images/Siemenseq6.jpg",
+    "desc": "• jadiddiidd <br><br> • jadiddiidd <br><br> • jadiddiidd <br><br> • jadiddiidd <br> ",
+    "price": 10000,
+    "link": "#"
+  },
+  {
+    "name": "Siemens EQ9",
+    "img": "images/siemenseq9.jpg",
+    "desc": "• jadiddiidd <br><br> • jadiddiidd <br><br> • jadiddiidd <br><br> • jadiddiidd <br> ",
+    "price": 10000,
+    "link": "#"
+  },
+  {
+    "name": "Siemens EQ300",
+    "img": "images/siemenseq300.jpg",
+    "desc": "• jadiddiidd <br><br> • jadiddiidd <br><br> • jadiddiidd <br><br> • jadiddiidd <br> ",
+    "price": 10000,
+    "link": "#"
+  },
+  {
+    "name": "Smeg BCC02",
+    "img": "images/SmegBCC02.jpg",
+    "desc": "• jadiddiidd <br><br> • jadiddiidd <br><br> • jadiddiidd <br><br> • jadiddiidd <br> ",
+    "price": 10000,
+    "link": "#"
+  },
+  {
+    "name": "Smeg BCC01",
+    "img": "images/smegBCC01.jpg",
+    "desc": "• jadiddiidd <br><br> • jadiddiidd <br><br> • jadiddiidd <br><br> • jadiddiidd <br> ",
+    "price": 10000,
+    "link": "#"
+  },
+  {
+    "name": "Nivonacafe Romatica",
+    "img": "images/nivonacaferomatica.jpg",
+    "desc": "• jadiddiidd <br><br> • jadiddiidd <br><br> • jadiddiidd <br><br> • jadiddiidd <br> ",
+    "price": 10000,
+    "link": "#"
+  }
+]
