@@ -508,6 +508,14 @@
     width: 6rem;
 
 }
+/*
+.different-angle > a:active{
+    border: 1px solid #2ca079;
+}
+
+ */
+
+
 
 .different-angle > a > img{
     display: block;

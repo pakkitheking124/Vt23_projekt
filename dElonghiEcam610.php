@@ -33,13 +33,13 @@ include_once('nav.fot/whitebar.php');
         </div>
 
         <div class="different-angle">
-            <a><img class="carousel-image" src="images/delonghiecam610.jpg" alt=""></a>
-            <a><img class="carousel-image" src="https://www.cremashop.eu/media/cache/product_lg/content/galleries/delonghi/primadonna-soul-ecam-610-75-mb/delonghi-primadonna-soul-ecam-610-75-mb-6925.jpeg" alt=""></a>
-            <a><img class="carousel-image" src="https://www.cremashop.eu/media/cache/product_lg/content/galleries/delonghi/primadonna-soul-ecam-610-75-mb/delonghi-primadonna-soul-ecam-610-75-mb-6926.jpeg" alt=""></a>
-            <a><img class="carousel-image" src="https://www.cremashop.eu/media/cache/product_lg/content/galleries/delonghi/primadonna-soul-ecam-610-75-mb/delonghi-primadonna-soul-ecam-610-75-mb-6927.jpeg" alt=""></a>
-            <a><img class="carousel-image" src="https://www.cremashop.eu/media/cache/product_lg/content/galleries/delonghi/primadonna-soul-ecam-610-75-mb/delonghi-primadonna-soul-ecam-610-75-mb-6933.jpeg" alt=""></a>
-            <a><img class="carousel-image" src="https://www.cremashop.eu/media/cache/product_lg/content/galleries/delonghi/primadonna-soul-ecam-610-75-mb/delonghi-primadonna-soul-ecam-610-75-mb-6931.jpeg" alt=""></a>
-            <a><img class="carousel-image" src="https://www.cremashop.eu/media/cache/product_lg/content/galleries/delonghi/primadonna-soul-ecam-610-75-mb/delonghi-primadonna-soul-ecam-610-75-mb-6928.jpeg" alt=""></a>
+            <a class="fafa"><img class="carousel-image" src="images/delonghiecam610.jpg" alt=""></a>
+            <a class="fafa"><img class="carousel-image" src="https://www.cremashop.eu/media/cache/product_lg/content/galleries/delonghi/primadonna-soul-ecam-610-75-mb/delonghi-primadonna-soul-ecam-610-75-mb-6925.jpeg" alt=""></a>
+            <a class="fafa"><img class="carousel-image" src="https://www.cremashop.eu/media/cache/product_lg/content/galleries/delonghi/primadonna-soul-ecam-610-75-mb/delonghi-primadonna-soul-ecam-610-75-mb-6926.jpeg" alt=""></a>
+            <a class="fafa"><img class="carousel-image" src="https://www.cremashop.eu/media/cache/product_lg/content/galleries/delonghi/primadonna-soul-ecam-610-75-mb/delonghi-primadonna-soul-ecam-610-75-mb-6927.jpeg" alt=""></a>
+            <a class="fafa"><img class="carousel-image" src="https://www.cremashop.eu/media/cache/product_lg/content/galleries/delonghi/primadonna-soul-ecam-610-75-mb/delonghi-primadonna-soul-ecam-610-75-mb-6933.jpeg" alt=""></a>
+            <a class="fafa"><img class="carousel-image" src="https://www.cremashop.eu/media/cache/product_lg/content/galleries/delonghi/primadonna-soul-ecam-610-75-mb/delonghi-primadonna-soul-ecam-610-75-mb-6931.jpeg" alt=""></a>
+            <a class="fafa"><img class="carousel-image" src="https://www.cremashop.eu/media/cache/product_lg/content/galleries/delonghi/primadonna-soul-ecam-610-75-mb/delonghi-primadonna-soul-ecam-610-75-mb-6928.jpeg" alt=""></a>
         </div>
 
         <div class="kundvagn-wrapped">
@@ -52,14 +52,29 @@ include_once('nav.fot/whitebar.php');
 
         const mainImage = document.getElementById('main-image');
         const carouselImages = document.getElementsByClassName('carousel-image');
+        const sakaDaka = document.getElementsByClassName('fafa');
 
 
         Array.from(carouselImages).forEach(image => {
             image.addEventListener('click', () => {
 
                 mainImage.src = image.src;
+
+
             });
         });
+
+        Array.from(sakaDaka).forEach(amet => {
+            amet.addEventListener('click', () => {
+
+                Array.from(sakaDaka).forEach(a => {
+                  a.style.border = '1px solid #e3e9ef';
+                  });
+
+                amet.style.border = '1px solid #2ca079';
+
+                });
+            });
     </script>
 
 
