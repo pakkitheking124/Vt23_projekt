@@ -8,14 +8,14 @@ include_once ('nav.fot/whitebar.php');
 
         <div class="categories-store">
             <a href="store.php">Erbjudande</a>
-            <a class="nuauto" href="automatiskacaffem.php">Automatic Coffee Machines
+            <a class="nuauto" href="automatiskacaffem.php">Automatiska Kaffe Maskiner
             </a>
             <a href="#">Espresso Maskiner</a>
-            <a href="#">Coffe Makers</a>
+            <a href="#">Kaffe Maskin</a>
             <a href="#">Mjölk Kylare</a>
             <a href="#">Koppar, Muggar och Termosar</a>
-            <a href="#">Coffe Capslar</a>
-            <a href="#">Coffe Böner</a>
+            <a href="#">Kaffe Kaspslar</a>
+            <a href="#">Kaffe böner</a>
         </div>
 
 

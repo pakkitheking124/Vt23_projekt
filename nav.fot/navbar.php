@@ -12,7 +12,7 @@ session_start();
     <ul>
         <li><a href="/index.php">Home</a></li>
         <li><a href="/store.php">Store</a></li>
-        <li><a href="#">About</a></li>
+        <li><a href="/about.php">About</a></li>
 
         <?php
         if (isset($_SESSION['userid'])) {
